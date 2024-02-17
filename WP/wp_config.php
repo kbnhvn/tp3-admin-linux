@@ -171,7 +171,12 @@ define( 'WP_DEBUG', false );
 //define('WP_HOME','https://tp2.cours-datascientest-devops.cloudns.be');
 //define('WP_SITEURL','https://tp2.cours-datascientest-devops.cloudns.be');
 
-
+//Fix pour SSL offloading: LB 443 vers Nginx 80
+/*
+if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
+    $_SERVER['HTTPS'] = 'on';
+}
+*/
 
 /* That's all, stop editing! Happy publishing. */
 
