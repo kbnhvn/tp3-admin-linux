@@ -40,12 +40,18 @@ Exécuter les commandes suivantes :
 ``` FLUSH PRIVILEGES; ```
 ``` EXIT; ```
 
+- Permettre l'accès distant à la base de données :
+``` sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf ```
+Commenter la ligne comportant : 
+``` bind-address = 127.0.0.1 ```
+Enregistrer et fermer l'éditeur de fichier. Relancer le service mariadb.
+
 ``` sudo systemctl restart mariadb ```
 ``` exit ```
 
 ### Installation de wordpress
 
-Sur votre navigateur, se rendres sur votre site et suivre les étapes d'installation de wordpress.
+Sur votre navigateur, se rendre sur votre site et suivre les étapes d'installation de wordpress.
 
 ### Modification du fichier home.html de wordpress
 
