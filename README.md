@@ -14,7 +14,7 @@ Ici seul le container du load-balancer est ouvert vers l'hôte (ports 80 et 443)
 
 Une grande partie de la configuration est automatisée.
 Cloner le repo et modifier les valeurs :
-Il vous faudra modifier **tp2.cours-datascientest-devops.cloudns.be** par votre nom de domaine dans les fichiers suivants :
+Il vous faudra modifier le **server_name** ```votre-nom-de-domaine``` par votre nom de domaine dans les fichiers suivants :
 - Load-balancer/lb.conf
 - WP/wp.conf
 
