@@ -85,7 +85,8 @@ Wordpress 1 :
 ``` vagrant ssh w1 ```
 ``` sudo nano /var/www/html/wordpress/wp-config.php ```
 - Décommenter cette partie en enlevant **/*** et ***/** :
-``` //Fix pour SSL offloading: LB 443 vers Nginx 80
+```
+//Fix pour SSL offloading: LB 443 vers Nginx 80
 /*
 if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
     $_SERVER['HTTPS'] = 'on';
@@ -100,7 +101,8 @@ Wordpress 2 :
 ``` vagrant ssh w2 ```
 ``` sudo nano /var/www/html/wordpress/wp-config.php ```
 - Décommenter cette partie en enlevant **/*** et ***/** :
-``` //Fix pour SSL offloading: LB 443 vers Nginx 80
+```
+//Fix pour SSL offloading: LB 443 vers Nginx 80
 /*
 if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
     $_SERVER['HTTPS'] = 'on';
